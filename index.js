@@ -4,7 +4,7 @@ bot.login(process.env.TOKEN)
 var prefix = ("?")
 
 bot.on('ready', function() {
-    bot.user.setPresence({ game: { name: 'Nexøs. | [?] ', type: 2} })
+    bot.user.setPresence({ game: { name: 'Nexøs. ', type: 2} })
     bot.user.setStatus('dnd');
     console.log("Connected");
 });
@@ -29,4 +29,7 @@ bot.on("guildMemberAdd", member => {
     .addField(`Nombre de membres après son arrivée`, member.guild.memberCount)
     .setTimestamp()
     bvn.send(embed)
+})
+bot.on("guildMemberAdd", member => {
+    message.reply(`Merci à toi d'avoir rejoins le serveur ! ${msg.guild}`)
 })
