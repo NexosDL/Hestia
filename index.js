@@ -30,6 +30,3 @@ bot.on("guildMemberAdd", member => {
     .setTimestamp()
     bvn.send(embed)
 })
-bot.on("guildMemberAdd", member => {
-    message.reply(`Merci à toi d'avoir rejoins le serveur ! ${msg.guild}`)
-})
